@@ -35,7 +35,7 @@ This folder contains the code and data required to perform outlier detection usi
 
 - **Steps to Run Outlier Detection**:
     1. Navigate to the specific folder for each class (e.g., `yolo_A`, `yolo_B`).
-    2. Open the `train.ipynb` file and ensure that the paths are set correctly for images and labels.
+    2. Open the `train.py` file and ensure that the paths are set correctly for images and labels.
     3. Modify the `config.yaml` file to match the correct folder structure.
     4. Run the notebook to detect and remove outliers.
 
@@ -57,7 +57,7 @@ This folder is for the classification of building types using the preprocessed d
     │   ├── C/
     │   ├── D/
     │   └── S/
-    ├── yolo_cls.py      # Notebook for training the classification model
+    ├── yolo_cls.py      # for training the classification model
     ├── runs/
     │   ├── classify/
     │   │   ├── train/
@@ -67,8 +67,8 @@ This folder is for the classification of building types using the preprocessed d
     ```
 
 - **Steps to Train the YOLO Classification Model**:
-    1. Open the `yolo_imagenet.ipynb` file.
-    2. Ensure that the paths for training and validation data are set correctly in the notebook.
+    1. Open the `yolo_cls.py` file.
+    2. Ensure that the paths for training and validation data are set correctly.
     3. Modify any necessary hyperparameters for training, such as epochs, etc.
     4. Run the notebook to train the YOLOv8n-cls model.
     5. The trained model weights will be saved under `runs/classify/train/weights/best.pt`.
@@ -90,8 +90,8 @@ To run the project, ensure the following dependencies are installed:
 
 ### Files Description for ResNet
 
-- **ResNet_MLCPS.ipynb**:
-    - This Jupyter notebook contains the code to train and validate the ResNet50 model on the building dataset. It uses transfer learning with a pre-trained model (ImageNet) and includes data preprocessing and augmentation steps.
+- **ResNet.py**:
+    - This file contains the code to train and validate the ResNet50 model on the building dataset. It uses transfer learning with a pre-trained model (ImageNet) and includes data preprocessing and augmentation steps.
     - The notebook will load the dataset, apply preprocessing (resizing images to 244x244), and train the ResNet model. After training, it saves the best model weights (`ResNet244_detected.h5`).
     
 - **ResNet244_detected.h5**:
@@ -107,8 +107,8 @@ To run the project, ensure the following dependencies are installed:
     - Matplotlib
 
 2. **Training**:
-    - Open the `ResNet_MLCPS.ipynb` file in Jupyter Notebook or Google Colab.
-    - Ensure the dataset path is correctly set up inside the notebook.
+    - Open the `ResNet.py` file.
+    - Ensure the dataset path is correctly set up.
     - Run the notebook to train the ResNet50 model.
     - The best model weights will be saved as `ResNet244_detected.h5` after training.
 

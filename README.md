@@ -57,7 +57,7 @@ This folder is for the classification of building types using the preprocessed d
     │   ├── C/
     │   ├── D/
     │   └── S/
-    ├── yolo_imagenet.ipynb      # Notebook for training the classification model
+    ├── yolo_cls.py      # Notebook for training the classification model
     ├── runs/
     │   ├── classify/
     │   │   ├── train/

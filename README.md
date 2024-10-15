@@ -19,7 +19,7 @@ This folder contains the code and data required to perform outlier detection usi
     Preprocessing_MLCPS/
     ├── yolo_A/
     │   ├── config.yaml            # YOLO configuration file for class A
-    │   ├── train.ipynb            # Notebook for training YOLO on class A data
+    │   ├── train.py            #for training YOLO on class A data
     │   ├── data/
     │   │   ├── images/
     │   │   │   ├── train/         # Training images for class A

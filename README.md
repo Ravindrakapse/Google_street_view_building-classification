@@ -38,6 +38,11 @@ This folder contains the code and data required to perform outlier detection usi
     2. Open the `train.py` file and ensure that the paths are set correctly for images and labels.
     3. Modify the `config.yaml` file to match the correct folder structure.
     4. Run the notebook to detect and remove outliers.
+<table>
+  <tr>
+    <td><img src="preprocessing_MLCPS/val_batch0_pred.jpg" width="100%"/><br><center>Figure 1: Detected buildings by YOLO.</center></td>
+  </tr>
+</table>
 
 ### 2. YOLO_MLCPS (Classification)
 This folder is for the classification of building types using the preprocessed data. The folder structure follows YOLO’s requirements for training and validation.
